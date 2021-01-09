@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin: 0 2.5rem;
+        padding: 1rem 2.5rem;
+        width: auto;
+      }
+      .row {
+        display: flex;
+        width: 100%;
+      }
+      .m-1 {
+        margin: 1rem;
+      }
+      .p-1 {
+        padding: 1rem;
+      }
+      .mr-1 {
+        margin-right: 1rem;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .w-100p {
+        width: 100%;
+      }
+      .h-75 {
+        min-height: 40rem;
+      }
+      .round {
+        border-radius: 8px;
+      }
+      textarea {
+        outline: 0;
+      }
+      .btn {
+        width: 5rem;
+        height: 2.5rem;
+        border: none;
+        margin: 1rem 0;
+      }
+      .btn-primary {
+        background: #0026ca;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .bg-blue-900 {
+        background: #304ffe;
+      }
+      .bg-white {
+        background: white;
+      }
+      .bg-gray {
+        background: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 bg-blue-900 p-1 round m-1">
+          <textarea class="w-100p h-75 round"></textarea>
+        </div>
+        <div class="col-6 bg-blue-900 p-1 round h-75 m-1">
+          <iframe
+            src=""
+            frameborder="0"
+            class="w-100p h-75 bg-white round"
+          ></iframe>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center">
+        <button class="btn btn-primary round">Run</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
